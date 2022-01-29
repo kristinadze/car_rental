@@ -1,9 +1,17 @@
-<h1>Cars upon cars!</h1>
 
-<ul>
-  <% @cars.each do |car| %>
-    <li><a href="<%= car_url(car) %>"><%= car.name %></a></li>
-  <% end %>
-</ul>
+    <h1>ALL OF THE CARS IN THE WORLD</h1>
+    <a href="<%= new_car_url %>">
+      Add Car
+      <i class="fa fa-plus" aria-hidden="true"></i>
+    </a>
+  </nav>
+    <% @cars.each do |car| %>
+      <div class="car-index-item">
+        <div>
+          <img src="https://cars.usnews.com/pics/size/776x517/images/Auto/izmo/i159614257/2021_acura_ilx_angularfront.jpg" >
+          <br /><a href="<%= car_url(car) %>">Rent <%= car.name %></a>
+        </div>
+      </div>
+    <% end %>
 
-<a href="<%= new_car_url %>">Create car</a>
+
