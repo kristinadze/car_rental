@@ -1,28 +1,43 @@
-<h1><%= @car.name %></h1>
+<section class="page"><div class="centered-box">
+  <img src="https://cars.usnews.com/pics/size/776x517/images/Auto/izmo/i159614257/2021_acura_ilx_angularfront.jpg" >
+  <h1><%= @car.name %></h1>
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <th>Value</th>
-  </tr>
-  <% [:year, :mpg, :doors, :gas, :seats].each do |attr_name| %>
+  <table>
     <tr>
-      <td><%= attr_name %></td>
-      <td><%= @car.send(attr_name) %></td>
+      <th>Attribute</th>
+      <th>Value</th>
     </tr>
-  <% end %>
-</table>
+    <% [:year, :mpg, :doors, :gas, :seats].each do |attr_name| %>
+      <tr>
+        <td><%= attr_name %></td>
+        <td><%= @car.send(attr_name) %></td>
+      </tr>
+    <% end %>
+  </table>
 
-<a href="<%= edit_car_url(@car) %>">Edit <%= @car.name %></a>
-
-<h2>Rental Requests</h2>
-<table>
-  <tr>
-    <th>Start Date</th>
-    <th>End Date</th>
-    <th>Status</th>
-  </tr>
-  <% @car.rental_requests.order('start_date').each do |req| %>
-    <%= render 'req_tr', req: req %>
+  <% if @car.owner == current_user %>
+    <a href="<%= edit_car_url(@car) %>">Edit <%= @car.name %></a>
   <% end %>
-</table>
+
+  <br><br>
+  <h1>Rental Requests</h1>
+  <% if @car.rental_requests.empty? %>
+    <p><%= @car.name %> has no rental requests.</p>
+  <% else %>
+    <table>
+      <tr>
+        <th>User</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Status</th>
+      </tr>
+      <% @car.rental_requests.order('start_date').each do |req| %>
+        <%= render 'req_tr', req: req %>
+      <% end %>
+    </table>
+  <% end %>
+
+  <% if logged_in? %>
+    <a href="<%= new_car_rental_request_url(car_id: @car.id) %>">Make new request</a>
+  <% end %>
+</div></section>

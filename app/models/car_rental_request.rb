@@ -2,14 +2,15 @@ class CarRentalRequest < ApplicationRecord
   # .freeze renders constants immutable
   STATUS_STATES = %w(APPROVED DENIED PENDING).freeze
 
+  after_initialize :assign_pending_status
+
   validates :car_id, :end_date, :start_date, :status, presence: true
   validates :status, inclusion: STATUS_STATES
   validate :start_must_come_before_end
   validate :does_not_overlap_approved_request
 
   belongs_to :car
-
-  after_initialize :assign_pending_status
+  belongs_to :user
 
   def approve!
     raise 'not pending' unless self.status == 'PENDING'
