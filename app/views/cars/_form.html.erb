@@ -1,0 +1,61 @@
+<% action = (car.persisted? ? car_url(car) : cars_url) %>
+<% method = (car.persisted? ? :patch : :post) %>
+
+<form action="<%= action %>" method="post">
+  <input type="hidden" name="_method" value="<%= method %>">
+
+  <label for="car_name">Name</label>
+  <input
+    type="text"
+    name="car[name]"
+    id="car_name"
+    value="<%= car.name %>">
+
+  <label for="car_year">Year</label>
+  <input
+    type="date"
+    name="car[car_year]"
+    id="car_year"
+    value="<%= car.year %>">
+  <br>
+
+  <label for="car_mpg">Mpg</label>
+  <input
+    type="text"
+    name="car[car_mpg]"
+    id="car_mpg"
+    value="<%= car.mpg %>">
+  <br>
+
+  <label for="car_doors">Doors</label>
+  <input
+    type="text"
+    name="car[car_doors]"
+    id="car_doors"
+    value="<%= car.doors %>">
+  <br>
+
+  <label for="car_gas">Gas</label>
+  <input
+    type="text"
+    name="car[car_gas]"
+    id="car_gas"
+    value="<%= car.gas %>">
+  <br>
+
+  <label for="car_seats">Seats</label>
+  <input
+    type="text"
+    name="car[car_seats]"
+    id="car_seats"
+    value="<%= car.seats %>">
+  <br>
+
+  <label>
+    Description
+    <textarea name="car[description]"><%= car.description %></textarea>
+  </label>
+
+  <% submit_text = (car.persisted? ? 'Update' : 'Create') + ' car!' %>
+  <input type="submit" value="<%= submit_text %>">
+</form>

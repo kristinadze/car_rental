@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_28_185914) do
+ActiveRecord::Schema.define(version: 2022_01_28_192247) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "car_rental_requests", force: :cascade do |t|
+    t.integer "car_id", null: false
+    t.date "end_date", null: false
+    t.date "start_date", null: false
+    t.string "status", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["car_id"], name: "index_car_rental_requests_on_car_id"
+  end
 
   create_table "cars", force: :cascade do |t|
     t.string "name", null: false
