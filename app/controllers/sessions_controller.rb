@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
         render :new
       else
         login_user!(user)
-        redirect_to cats_url
+        redirect_to cars_url
       end
     end
   
