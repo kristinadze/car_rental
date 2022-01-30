@@ -3,6 +3,11 @@
 <%= render "shared/errors" %>
 
 <form action="<%= car_rental_requests_url %>" method="post">
+<input
+    type="hidden"
+    name="authenticity_token"
+    value="<%= form_authenticity_token %>">
+
   <label for="car_rental_request_car_id">Car</label>
   <select name="car_rental_request[car_id]"
           id="car_rental_request_car_id">

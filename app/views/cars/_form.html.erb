@@ -3,6 +3,10 @@
 
 <form action="<%= action %>" method="post">
   <input type="hidden" name="_method" value="<%= method %>">
+  <input
+    type="hidden"
+    name="authenticity_token"
+    value="<%= form_authenticity_token %>">
 
   <label for="car_name">Name</label>
   <input
@@ -13,7 +17,7 @@
 
   <label for="car_year">Year</label>
   <input
-    type="date"
+    type="text"
     name="car[car_year]"
     id="car_year"
     value="<%= car.year %>">
