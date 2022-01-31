@@ -3,7 +3,7 @@ class CarsController < ApplicationController
     before_action :require_user!, only: %i(new create edit update)
 
     def index
-        @cars = Car.all 
+        @cars = Car.all.with_attached_image
         render :index
     end
 
@@ -18,7 +18,9 @@ class CarsController < ApplicationController
     end
 
     def create
-        @car = current_user.cars.new(car_params)
+        @car = Car.create! car_params
+        @car.image.attach(params[:car][:image])
+        # @car = current_user.cars.new(car_params)
         if @car.save 
             redirect_to car_url(@car)
         else

@@ -1,65 +1,30 @@
 <% action = (car.persisted? ? car_url(car) : cars_url) %>
 <% method = (car.persisted? ? :patch : :post) %>
 
-<form action="<%= action %>" method="post">
-  <input type="hidden" name="_method" value="<%= method %>">
-  <input
-    type="hidden"
-    name="authenticity_token"
-    value="<%= form_authenticity_token %>">
+<%= form_for (@car) do |f|%>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br>
 
-  <label for="car_name">Name</label>
-  <input
-    type="text"
-    name="car[name]"
-    id="car_name"
-    value="<%= car.name %>">
+  <%= f.label :year %>
+  <%= f.text_field :year %><br>
 
-  <label for="car_year">Year</label>
-  <input
-    type="text"
-    name="car[car_year]"
-    id="car_year"
-    value="<%= car.year %>">
-  <br>
+  <%= f.label :mpg %>
+  <%= f.text_field :mpg %><br>
 
-  <label for="car_mpg">Mpg</label>
-  <input
-    type="text"
-    name="car[car_mpg]"
-    id="car_mpg"
-    value="<%= car.mpg %>">
-  <br>
+  <%= f.label :doors %>
+  <%= f.text_field :doors %><br>
 
-  <label for="car_doors">Doors</label>
-  <input
-    type="text"
-    name="car[car_doors]"
-    id="car_doors"
-    value="<%= car.doors %>">
-  <br>
+  <%= f.label :gas %>
+  <%= f.text_field :gas %><br>
 
-  <label for="car_gas">Gas</label>
-  <input
-    type="text"
-    name="car[car_gas]"
-    id="car_gas"
-    value="<%= car.gas %>">
-  <br>
+  <%= f.label :seats %>
+  <%= f.text_field :seats %><br>
 
-  <label for="car_seats">Seats</label>
-  <input
-    type="text"
-    name="car[car_seats]"
-    id="car_seats"
-    value="<%= car.seats %>">
-  <br>
+  <%= f.label :image %>
+  <%= f.file_field :image %>
 
-  <label>
-    Description
-    <textarea name="car[description]"><%= car.description %></textarea>
-  </label>
+  <%= f.label :description %>
+  <%= f.text_field :description %><br>
 
-  <% submit_text = (car.persisted? ? 'Update' : 'Create') + ' car!' %>
-  <input type="submit" value="<%= submit_text %>">
-</form>
+  <%= f.submit %>
+<% end %>
