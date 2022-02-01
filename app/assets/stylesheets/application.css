@@ -1,15 +1,158 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* PHASE 0: Reset */
+html,
+body,
+header,
+nav,
+h1,
+a,
+ul,
+li,
+strong,
+main,
+button,
+i,
+section,
+img,
+div,
+h2,
+p,
+form,
+fieldset,
+label,
+input,
+textarea,
+span,
+article,
+footer,
+time,
+small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: "Noto Sans", sans-serif;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+  /*
+  Get rid of native styling. Read more here:
+  http://css-tricks.com/almanac/properties/a/appearance/
+  */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* Clearfix */
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.my-own-color {
+  color: #1a1a1b;
+}
+
+.nav-link {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  white-space: nowrap;
+  color: #414143;
+}
+
+.nav-item:hover {
+  background-color: #dae0e6;
+}
+
+.nav-link:hover {
+  color: #1a1a1b;
+  text-decoration: none;
+}
+
+.navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  border-bottom: 1px solid black;
+}
+
+.sign-in-link {
+  font-size: 12px;
+}
+
+.btn-primary2 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.btn-outline-primary2 {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 9px;
+}
+
+.nav-item2:hover {
+  background-color: white;
+}
+
+input[name="commit"] {
+  color: gray;
+  float: right;
+}
+
+.me-2:hover {
+  border: 1px solid #0e88f1;
+}
+
+.nature_car {
+  height: 34%;
+  width: 99%;
+}
+
+.main-container {
+  width: 75%;
+  margin-top: 32px;
+  margin-left: 26%;
+}
+
+#p-main-container {
+  font-family: RlFreight, HoeflerText-Black, Times New Roman, serif;
+  font-size: 90px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 90px;
+  text-transform: none;
+}
+
+#h5-main-container {
+  padding-left: 9%;
+}
+/*# sourceMappingURL=application.css.map */

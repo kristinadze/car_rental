@@ -1,0 +1,29 @@
+.main-container {
+  width: 75%;
+  margin-top: 32px;
+  margin-left: 26%;
+}
+
+#p-main-container {
+  font-family: RlFreight, HoeflerText-Black, Times New Roman, serif;
+  font-size: 90px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 90px;
+  text-transform: none;
+}
+
+.parent {
+  position: relative;
+}
+
+#h5-main-container {
+  padding-left: 9%;
+  z-index: 1;
+}
+
+.pink-div {
+  background-color: #f1e3ec;
+  position: absolute;
+}
+/*# sourceMappingURL=main_content.css.map */

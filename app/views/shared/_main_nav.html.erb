@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-sm navbar-light" >
+  <div class="container">
+  
+    <a class="navbar-brand" href="/cars" >
+      <%= image_tag("Carro2.jpg", :alt => "reddit logo", style: 'height:43px;width:86px;') %>
+    </a>
+    
+      <ul class="nav nav-ul justify-content-end">
+      <% if current_user %>
+        
+        <li class="nav-item">
+          <a class="nav-link my-own-color" aria-current="page"><%= current_user.username %></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active my-own-color" aria-current="page"><%= button_to "Logout", session_url, method: :delete %></a>
+        </li>
+
+        <% else %>
+
+        <li class="nav-item nav-item2">
+            <a class="btn btn-primary btn-primary2" href="/users/new" role="button">Sign Up</a>
+            <a class="btn btn-outline-primary btn-outline-primary2" href="/session/new" role="button">Log In</a>
+            
+        </li>
+
+      <% end %> 
+
+        
+      </ul>
+
+      
+      
+
+  </div>
+</nav>
