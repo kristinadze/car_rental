@@ -1,7 +1,12 @@
 .main-container {
   width: 75%;
-  margin-top: 32px;
+  margin-top: 60px;
   margin-left: 26%;
+}
+
+.nature_car {
+  height: 34%;
+  width: 99%;
 }
 
 #p-main-container {
