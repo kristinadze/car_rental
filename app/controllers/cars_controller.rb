@@ -3,7 +3,7 @@ class CarsController < ApplicationController
     before_action :require_user!, only: %i(new create edit update)
 
     def index
-        @cars = Car.all.with_attached_image
+        @cars = Car.all
         render :index
     end
 
@@ -18,9 +18,7 @@ class CarsController < ApplicationController
     end
 
     def create
-        @car = Car.create! car_params
-        @car.image.attach(params[:car][:image])
-        # @car = current_user.cars.new(car_params)
+        @car = current_user.cars.new(car_params)
         if @car.save 
             redirect_to car_url(@car)
         else
@@ -47,6 +45,6 @@ class CarsController < ApplicationController
     private
 
     def car_params
-        params.require(:car).permit(:name, :year, :mpg, :doors, :gas, :seats, :description)
+        params.require(:car).permit(:name, :year, :mpg, :doors, :gas, :seats, :description, :image)
     end
 end
