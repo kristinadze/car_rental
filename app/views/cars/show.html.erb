@@ -1,12 +1,13 @@
 <section class="page"><div class="centered-box">
   <h1><%= @car.name %></h1>
+  <%= image_tag @car.image, style: "width: 251px; display: block" %>
 
   <table>
     <tr>
       <th>Attribute</th>
       <th>Value</th>
     </tr>
-    <% [:year, :mpg, :doors, :gas, :seats].each do |attr_name| %>
+    <% [:year, :mpg, :doors, :gas, :seats, :description].each do |attr_name| %>
       <tr>
         <td><%= attr_name %></td>
         <td><%= @car.send(attr_name) %></td>
