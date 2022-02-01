@@ -7,20 +7,16 @@
     <p id="p-main-container">Find your drive<p>
     
     <h5 id="h5-main-container"> Explore the world's largest car sharing marketplace</h5>
-
-    <a href="<%= new_car_url %>">
-      Add Car
-      <i class="fa fa-plus" aria-hidden="true"></i>
-    </a>
-  </nav>
-    <% @cars.each do |car| %>
-      <div class="car-index-item">
-        <div>
-          <br /><a href="<%= car_url(car) %>">Rent <%= car.name %></a>
-          <%= image_tag car.image, style: "width: 251px; display: block"  %>
-        </div>
-      </div>
-    <% end %>
+</div>
+  <div class="browse-cars">
+    <%= image_tag("road2.jpg", style: "width:21%; border-radius: 76px 149px; opacity:83%; display:inline; padding-left:16%") %>
+    <div class="h6-p-div">
+      <h6> Find the perfect car to conquer the great outdoors </h6>
+      <p>Go prepared in a rugged 4x4 to take on winter roads <br>
+       with ease,
+      or a camper van to take you to the trees.</p>
+    </div>
   </div>
+
 
 
