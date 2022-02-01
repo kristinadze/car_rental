@@ -10,15 +10,15 @@
       <% if current_user %>
 
         <li class="nav-item">
-            <a class="nav-link become-a-host"href="<%= new_car_url %>"> Become a host </a>
+            <a class="nav-i become-a-host"href="<%= new_car_url %>"> Become a host </a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link my-own-color" aria-current="page"><%= current_user.username %></a>
+          <a class="nav-i" aria-current="page"><%= current_user.username %></a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active my-own-color" aria-current="page"><%= button_to "Logout", session_url, method: :delete %></a>
+          <a class="nav-i active" aria-current="page"><%= button_to "Logout", session_url, method: :delete %></a>
         </li>
 
         <% else %>
