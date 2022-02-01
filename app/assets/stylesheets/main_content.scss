@@ -19,11 +19,38 @@
 }
 
 .browse-cars {
-  border: 1px solid black;
+  //   border: 1px solid black;
   width: 85%;
   margin-top: 6%;
 }
 
 .h6-p-div {
   float: right;
+}
+
+#browse-cars-h6 {
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.2px;
+  line-height: 32px;
+  text-transform: none;
+}
+
+span {
+  color: #593cfb;
+}
+
+.my-button-color {
+  display: inline-block;
+  height: 50px;
+  line-height: 49px;
+  padding: 0 18px;
+  text-align: center;
+  vertical-align: top;
+  background-color: #593cfb;
+  border: 1px solid #593cfb;
+  color: #ffffff;
+  font-size: 18px;
+  -webkit-transition: 0.5s border, 0.5s background;
+  transition: 0.5s border, 0.5s background;
 }
