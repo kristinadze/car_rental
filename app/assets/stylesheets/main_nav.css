@@ -1,0 +1,60 @@
+.my-own-color {
+  color: #1a1a1b;
+}
+
+.nav-link {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  white-space: nowrap;
+  color: #414143;
+}
+
+.nav-item:hover {
+  background-color: #dae0e6;
+}
+
+.nav-link:hover {
+  color: #1a1a1b;
+  text-decoration: none;
+}
+
+.navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  border-bottom: 1px solid black;
+}
+
+.sign-in-link {
+  font-size: 12px;
+}
+
+.btn-primary2 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.btn-outline-primary2 {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 9px;
+}
+
+.nav-item2:hover {
+  background-color: white;
+}
+
+input[name="commit"] {
+  color: gray;
+  float: right;
+}
+
+.me-2:hover {
+  border: 1px solid #0e88f1;
+}
+
+.nature_car {
+  height: 34%;
+  width: 99%;
+}
+/*# sourceMappingURL=main_nav.css.map */
