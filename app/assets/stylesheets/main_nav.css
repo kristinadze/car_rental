@@ -22,7 +22,6 @@
 .navbar {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  border-bottom: 1px solid black;
 }
 
 .sign-in-link {
@@ -56,5 +55,9 @@ input[name="commit"] {
 .nature_car {
   height: 34%;
   width: 99%;
+}
+
+.become-a-host {
+  border: 1px solid black;
 }
 /*# sourceMappingURL=main_nav.css.map */

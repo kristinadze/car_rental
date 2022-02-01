@@ -13,17 +13,17 @@
   text-transform: none;
 }
 
-.parent {
-  position: relative;
-}
-
 #h5-main-container {
   padding-left: 9%;
-  z-index: 1;
 }
 
-.pink-div {
-  background-color: #f1e3ec;
-  position: absolute;
+.browse-cars {
+  border: 1px solid black;
+  width: 85%;
+  margin-top: 6%;
+}
+
+.h6-p-div {
+  float: right;
 }
 /*# sourceMappingURL=main_content.css.map */
