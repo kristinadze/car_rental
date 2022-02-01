@@ -6,14 +6,14 @@
 }
 
 .nature_car {
-  height: 34%;
-  width: 99%;
+  min-width: 100%;
+  min-height: 60%;
 }
 
 #p-main-container {
   font-family: RlFreight, HoeflerText-Black, Times New Roman, serif;
   font-size: 90px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -1px;
   line-height: 90px;
   text-transform: none;
@@ -47,6 +47,7 @@ span {
 
 .my-button-color {
   display: inline-block;
+  text-decoration: none;
   height: 50px;
   line-height: 49px;
   padding: 0 18px;
@@ -58,4 +59,14 @@ span {
   font-size: 18px;
   -webkit-transition: 0.5s border, 0.5s background;
   transition: 0.5s border, 0.5s background;
+}
+
+.my-button-color:hover {
+  background-color: #210aa1;
+}
+
+.browse-cars-p {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-weight: 300;
 }
