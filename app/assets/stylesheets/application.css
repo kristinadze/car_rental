@@ -234,11 +234,16 @@ span {
 
 .div-answer {
   font-size: 15px;
-  font-weight: 500;
-  border-top: 1px solid gray;
 }
 
 .div-answer-1 {
-  padding-right: 5%;
+  border-top: 1px solid rgba(223, 219, 219, 0.986);
+  margin-right: 5%;
+  padding-top: 2%;
+}
+
+.div-answer-2 {
+  border-top: 1px solid rgba(223, 219, 219, 0.986);
+  padding-top: 10%;
 }
 /*# sourceMappingURL=application.css.map */
