@@ -24,7 +24,76 @@
     </div>
   </div>
 
-  <%# <h3> Frequently asked questions </h3> %>
+   <div class="div-questions">
+      <h3 class="h3-questions"> Frequently asked questions </h3>
+  </div>
+
+
+  <div class="div-answers">
+
+        <div class="div-answer-1 div-answer">
+
+        <p><a onclick="javascript:ShowHide('HiddenDiv')">What do I need to book a car on Turo? <i class="fas fa-angle-down"></i></a></p>
+            <div class="mid" id="HiddenDiv" style="display: none;"><font face="Arial" color="#306Eff"> 
+            
+                  To book a car on Turo, you must create a Turo account, be 18 years old <br>
+                      or older in the US, 21 years old or <br>
+                  older in the UK, 23 years old or older in Canada, have a valid driver’s license, and get approved to <br>
+                  drive on Turo. When you’re booking your first trip, you’ll go through a <br> 
+                  quick approval process by entering your driver’s license and some <br>
+                  other information. In most cases, you’ll get approved immediately, <br>
+                  and you’ll be set for all future road trips, day trips, and business trips!
+              
+            </div>
+        </div>
+
+      <div class="div-answer-2 div-answer">
+
+        <p><a onclick="javascript:ShowHide2('HiddenDiv2')">What happens if I have an accident? <i class="fas fa-angle-down"></i></a></p>
+            <div class="mid" id="HiddenDiv2" style="display: none;"><font face="Arial" color="#306Eff"> 
+            
+                 If there’s an emergency or an issue with the car, call our emergency <br>
+                 roadside assistance provider, available 24/7. We’ll make sure you’re <br>
+                 safe, then help you get back on your way.
+            </div>
+      </div>
+
+
+  </div>     
+
+
+
+
+
+
+    <script type="text/javascript">
+        function ShowHide(divId)
+        {
+        if(document.getElementById(divId).style.display == 'none')
+        {
+        document.getElementById(divId).style.display='block';
+        }
+        else
+        {
+        document.getElementById(divId).style.display = 'none';
+        }
+        }
+
+        function ShowHide2(divId)
+        {
+        if(document.getElementById(divId).style.display == 'none')
+        {
+        document.getElementById(divId).style.display='block';
+        }
+        else
+        {
+        document.getElementById(divId).style.display = 'none';
+        }
+        }
+    </script>
+
+
+  
 
   <br>
   <br>
