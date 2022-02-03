@@ -7,6 +7,11 @@ class CarsController < ApplicationController
         render :index
     end
 
+    def browse
+        @cars = Car.all
+        render :browse
+    end
+
     def show 
         @car = Car.find(params[:id])
         render :show
