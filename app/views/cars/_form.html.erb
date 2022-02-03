@@ -1,30 +1,33 @@
 <% action = (car.persisted? ? car_url(car) : cars_url) %>
 <% method = (car.persisted? ? :patch : :post) %>
 
-<%= form_for (@car) do |f|%>
-  <%= f.label :name %>
-  <%= f.text_field :name %><br>
+<div class="create-car">
+  <%= form_for (@car) do |f|%>
 
-  <%= f.label :year %>
-  <%= f.text_field :year %><br>
+    <%= f.label :name %> <br>
+    <%= f.text_field :name %> <br>
 
-  <%= f.label :mpg %>
-  <%= f.text_field :mpg %><br>
+    <%= f.label :year %><br>
+    <%= f.text_field :year %><br>
 
-  <%= f.label :doors %>
-  <%= f.text_field :doors %><br>
+    <%= f.label :mpg %><br>
+    <%= f.text_field :mpg %><br>
 
-  <%= f.label :gas %>
-  <%= f.text_field :gas %><br>
+    <%= f.label :doors %><br>
+    <%= f.text_field :doors %><br>
 
-  <%= f.label :seats %>
-  <%= f.text_field :seats %><br>
+    <%= f.label :gas %><br>
+    <%= f.text_field :gas %><br>
 
-  <%= f.label :images %>
-  <%= f.file_field :image %>
+    <%= f.label :seats %><br>
+    <%= f.text_field :seats %><br>
 
-  <%= f.label :description %>
-  <%= f.text_field :description %><br>
+    <%= f.label :images %><br>
+    <%= f.file_field :image %><br>
 
-  <%= f.submit %>
-<% end %>
+    <%= f.label :description %><br>
+    <%= f.text_field :description %><br>
+
+    <%= f.submit %>
+  <% end %>
+</div>
