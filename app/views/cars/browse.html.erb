@@ -1,8 +1,14 @@
-<% @cars.each do |car| %>
-      <div class="car-index-item">
-        <div>
-          <br /><a href="<%= car_url(car) %>">Rent <%= car.name %></a>
-          <%= image_tag car.image, style: "width: 251px; display: block"  %>
+
+
+
+<div class='browse-cars-div'>
+    <% @cars.each do |car| %>
+        <div class="browse-car-div">
+            
+            <%= image_tag car.image, style: "display: block"  %>
+            <br/>
+            <a class="browse-p"href="<%= car_url(car) %>">Rent <%= car.name + " " %><%= car.year%></a>
         </div>
-      </div>
     <% end %>
+</div>
+
