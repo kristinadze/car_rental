@@ -18,14 +18,25 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-i active" aria-current="page"><%= button_to "Logout", session_url, method: :delete %></a>
+          <a class="nav-i" aria-current="page"><%= button_to "Logout", session_url, method: :delete %></a>
         </li>
 
         <% else %>
 
         <li class="nav-item nav-item2">
-            <a class="btn btn-primary btn-primary2" href="/users/new" role="button">Sign Up</a>
-            <a class="btn btn-outline-primary btn-outline-primary2" href="/session/new" role="button">Log In</a>
+
+        <li class="nav-item">
+            <a class="nav-i become-a-host"href="<%= new_car_url %>"> Become a host </a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-i" aria-current="page" href="<%= new_user_url %>">Sign Up</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-i" aria-current="page" href="<%= new_session_url %>">Log In</a>
+        </li>
             
         </li>
 
