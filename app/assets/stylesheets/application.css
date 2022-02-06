@@ -158,7 +158,7 @@ input[name="commit"] {
 
 .browse-cars {
   width: 85%;
-  margin-top: 6%;
+  margin-top: 8%;
 }
 
 .h6-p-div {
@@ -197,6 +197,10 @@ span {
   background-color: #210aa1;
 }
 
+.div-questions {
+  margin-top: 6%;
+}
+
 .browse-cars-p {
   margin-top: 20px;
   margin-bottom: 25px;
@@ -215,7 +219,8 @@ span {
 
 .div-questions {
   text-align: center;
-  margin-top: 6%;
+  margin-top: 9%;
+  margin-bottom: 5%;
 }
 
 .div-answers {
