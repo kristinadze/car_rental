@@ -39,7 +39,7 @@ button:focus {
   border-color: #ffffff;
 }
 
-form {
+.form-login {
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,11 +93,6 @@ input {
   left: 0;
   width: 50%;
   z-index: 2;
-}
-
-.container.right-panel-active .sign-in-container {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
 }
 
 .sign-up-container {

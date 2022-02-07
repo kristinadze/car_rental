@@ -43,7 +43,7 @@ button:focus {
   border-color: #ffffff;
 }
 
-form {
+.form-login {
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -88,9 +88,9 @@ input {
   z-index: 2;
 }
 
-.container.right-panel-active .sign-in-container {
-  transform: translateX(100%);
-}
+// .container.right-panel-active .sign-in-container {
+//   transform: translateX(100%);
+// }
 
 .sign-up-container {
   left: 0;
