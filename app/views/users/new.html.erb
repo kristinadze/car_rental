@@ -14,6 +14,7 @@
 	</div>
 	<div class="form-container sign-in-container">
 		<form class="form-login" action="<%= users_url %>" method="post">
+
     <input
       type="hidden"
       name="authenticity_token"
@@ -24,9 +25,11 @@
 				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
+      
 			<input type="text" name="user[username]" id="user_username" placeholder="Username" />
 			<input type="password" name="user[password]" id="user_password" placeholder="Password" />
 			<button class="signin-button">Sign Up</button>
+      
 		</form>
 	</div>
 	<div class="overlay-container">
