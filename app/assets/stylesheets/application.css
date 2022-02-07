@@ -248,6 +248,26 @@ span {
   padding-top: 10%;
 }
 
+.h6-p-div-2 {
+  float: left;
+  margin-top: 12%;
+  margin-left: 32%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.h6-p-div-3 {
+  margin-right: 8%;
+  float: right;
+}
+
+.browse-cars-3 {
+  width: 85%;
+  margin-top: 2%;
+}
+
 .browse-cars-div {
   display: -webkit-box;
   display: -ms-flexbox;

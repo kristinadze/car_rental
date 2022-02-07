@@ -17,10 +17,26 @@
        with ease,
       or a camper van to take you to the trees.</p>
 
-    <a href="cars/browse">
-      <button type="button" class="my-button-color">Browse cars </button>
-    </a>
+      <a href="cars/browse">
+        <button type="button" class="my-button-color">Browse cars </button>
+      </a>
 
+    </div>
+  </div>
+
+  <div class="browse-cars">
+    <%= image_tag("car4.jpg", style: "width:32%; display:inline; padding-left:11%") %>
+    <div class="h6-p-div-2">
+      <h6 id="browse-cars-h6"><a href="cars/browse"> <span> Book a car > </span></a></h6>
+      <p class="browse-cars-p">Down the street or across the <br> country, find the perfect vehicle <br> for your next adventure.</p>
+    </div>
+  </div>
+
+  <div class="browse-cars-3">
+    <%= image_tag("key.png", style: "width:20%; display:inline; padding-left:35%") %>
+    <div class="h6-p-div-3">
+      <h6 id="browse-cars-h6"><a href="<%= new_car_url %>"> <span>Become a host > </span></a></h6>
+      <p class="browse-cars-p">Accelerate your entrepreneurship <br> and start building a small car sharing<br> business on Turo.</p>
     </div>
   </div>
 
@@ -28,12 +44,11 @@
       <h3 class="h3-questions"> Frequently asked questions </h3>
   </div>
 
-
   <div class="div-answers">
 
         <div class="div-answer-1 div-answer">
 
-        <p><a onclick="javascript:ShowHide('HiddenDiv')">What do I need to book a car on Carro? <i class="fas fa-angle-down"></i></a></p>
+          <p><a onclick="javascript:ShowHide('HiddenDiv')">What do I need to book a car on Carro? <i class="fas fa-angle-down"></i></a></p>
             <div class="mid" id="HiddenDiv" style="display: none;"><font face="Arial" color="#306Eff"> 
             
                   To book a car on Turo, you must create a Turo account, be 18 years old <br>
