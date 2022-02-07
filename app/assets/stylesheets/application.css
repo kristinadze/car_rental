@@ -252,10 +252,6 @@ a {
   margin: auto;
 }
 
-input[type="text"] {
-  border: 1px solid gray;
-}
-
 .h1-login {
   font-weight: bold;
   margin: 0;
