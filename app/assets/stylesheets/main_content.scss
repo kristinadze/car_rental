@@ -24,7 +24,6 @@
 }
 
 .browse-cars {
-  //   border: 1px solid black;
   width: 85%;
   margin-top: 8%;
 }
@@ -112,3 +111,29 @@ span {
   border-top: 1px solid rgba(223, 219, 219, 0.986);
   padding-top: 10%;
 }
+
+.h6-p-div-2 {
+  float: left;
+  margin-top: 12%;
+  margin-left: 32%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.h6-p-div-3 {
+  margin-right: 8%;
+  float: right;
+}
+
+.browse-cars-3 {
+  width: 85%;
+  margin-top: 2%;
+}
+
+// @media only screen and (max-width: 1118px) {
+//   .index-img {
+//     display: none;
+//   }
+// }
