@@ -5,7 +5,6 @@ body,
 header,
 nav,
 h1,
-a,
 ul,
 li,
 strong,
@@ -34,7 +33,7 @@ small {
   font: "Noto Sans", sans-serif;
   color: black;
   text-align: inherit;
-  text-decoration: inherit;
+  text-decoration: none;
   vertical-align: inherit;
   box-sizing: inherit;
   background: transparent;
@@ -76,4 +75,8 @@ input[type="submit"] {
   content: "";
   display: block;
   clear: both;
+}
+
+body > div > a {
+  text-decoration: none;
 }
