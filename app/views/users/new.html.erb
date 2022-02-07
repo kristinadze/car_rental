@@ -1,30 +1,46 @@
-<section class="page">
-  <div class="centered-box">
-    <h1>New User</h1>
-
-    <%= render 'shared/errors' %>
-
-    <form action="<%= users_url %>" method="post">
-      <input
-        type="hidden"
-        name="authenticity_token"
-        value="<%= form_authenticity_token %>">
-
-      <label for="user_username">User Name</label>
-      <input type="text"
-        name="user[username]"
-        id="user_username"
-        value="<%= @user.username %>">
-      <br>
-
-      <label for="user_password">Password</label>
-      <input type="password"
-        name="user[password]"
-        id="user_password"
-        value="<%= @user.password %>">
-      <br>
-
-      <input type="submit">
-    </form>
-  </div>
-</section>
+<div class="container2" id="container2">
+	<div class="form-container sign-up-container">
+		<form action="<%= users_url %>" method="post">
+			<h1 class="h1-login">Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<input type="text" name="user[username]" id="user_username" placeholder="Username" />
+			<input type="password" name="user[password]" id="user_password" placeholder="Password" />
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="<%= users_url %>" method="post">
+    <input
+      type="hidden"
+      name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+			<h1 class="h1-login">Sign Up</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<input type="text" name="user[username]" id="user_username" placeholder="Username" />
+			<input type="password" name="user[password]" id="user_password" placeholder="Password" />
+			<button class="signin-button">Sign Up</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1 class="h1-login">Welcome Back!</h1>
+				<p class="p-login">To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1 class="h1-overlay">Hello, Friend!</h1>
+				<p class="p-overlay">Already have an account?</p>
+				<a href="<%= new_session_url %>"><button class="button-ghost">Sign In</button></a>
+			</div>
+		</div>
+	</div>
+</div>

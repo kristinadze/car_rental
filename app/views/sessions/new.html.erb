@@ -1,6 +1,5 @@
 <div class="container2" id="container2">
 	<div class="form-container sign-up-container">
-  <%= render "shared/errors" %>
 		<form action="<%= session_url %>" method="post">
 			<h1 class="h1-login">Create Account</h1>
 			<div class="social-container">
@@ -14,15 +13,19 @@
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form action="<%= session_url %>" method="post">
+    <input
+      type="hidden"
+      name="authenticity_token"
+      value="<%= form_authenticity_token %>">
 			<h1 class="h1-login">Sign in</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
 				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
-			<input type="email" placeholder="Username" />
-			<input type="password" placeholder="Password" />
+			<input type="text" name="user[username]" id="user_username" placeholder="Username" />
+			<input type="password" name="user[password]" id="user_password" placeholder="Password" />
 			<button class="signin-button">Sign In</button>
 		</form>
 	</div>
@@ -36,7 +39,7 @@
 			<div class="overlay-panel overlay-right">
 				<h1 class="h1-overlay">Hello, Friend!</h1>
 				<p class="p-overlay">Enter your personal details and start journey with us</p>
-				<button class="button-ghost" id="signUp">Sign Up</button>
+				<a href="<%= new_user_url %>"><button class="button-ghost" id="signUp">Sign Up</button></a>
 			</div>
 		</div>
 	</div>
