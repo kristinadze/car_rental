@@ -5,6 +5,13 @@
   margin-left: 26%;
 }
 
+.main-container-2 {
+  width: 75%;
+  margin-top: 60px;
+  margin-left: 26%;
+  margin-top: 6%;
+}
+
 #p-main-container {
   font-family: RlFreight, HoeflerText-Black, Times New Roman, serif;
   font-size: 90px;
@@ -20,7 +27,12 @@
 
 .browse-cars {
   width: 85%;
-  margin-top: 8%;
+  margin-top: -1%;
+}
+
+.browse-cars-2 {
+  width: 85%;
+  margin-top: 6%;
 }
 
 .h6-p-div {
@@ -128,5 +140,15 @@ a {
 .browse-cars-3 {
   width: 85%;
   margin-top: 2%;
+}
+
+.h2-fuel-your-daydreams {
+  font-family: RlFreight,  HoeflerText-Black,  Times New Roman,  serif;
+  font-size: 51px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  line-height: 56px;
+  text-transform: none;
+  margin-left: 8%;
 }
 /*# sourceMappingURL=main_content.css.map */
