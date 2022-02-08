@@ -36,3 +36,32 @@
   line-height: 44px;
   text-transform: none;
 }
+
+.text-form-description {
+  border: 1px solid #c7c7c7;
+  width: 96%;
+  height: 34%;
+  padding: 3px 10px;
+}
+
+.my-button-color-2 {
+  display: inline-block;
+  text-decoration: none;
+  height: 50px;
+  line-height: 49px;
+  padding: 0 18px;
+  text-align: center;
+  vertical-align: top;
+  background-color: #593cfb;
+  border: 1px solid #593cfb;
+  color: #ffffff;
+  font-size: 18px;
+  -webkit-transition: 0.5s border, 0.5s background;
+  transition: 0.5s border, 0.5s background;
+  float: right;
+  margin-top: 2%;
+}
+
+.my-button-color-2:hover {
+  background-color: #210aa1;
+}

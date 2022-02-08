@@ -34,12 +34,13 @@
      <p class="p-form"><a onclick="javascript:ShowHide('HiddenDiv13')"><i class="fas fa-angle-down"></i>Car details </a></p>
           <div class="mid" id="HiddenDiv13" style="display: none;color:black; font-size: 15px; font-weight: 400; margin-top: 2%;margin-bottom: 3%;"> 
               <%= f.label :description %><br>
-              <%= f.text_field :description, :class => 'text-form' %><br>
+              <%= f.text_area :description, :class => 'text-form-description' %><br>
           </div>
     
 
     <%#= f.submit %>
-    <button type="button" class="my-button-color">Agree </button>
+    <%# <input type="submit" class="btn create-color create-button" value="Submit"></button %>
+    <button type="submit" class="my-button-color-2">Agree </button>
 
   <% end %>
 </div>
