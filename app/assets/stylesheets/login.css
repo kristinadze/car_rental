@@ -59,7 +59,7 @@ button:focus {
   text-align: center;
 }
 
-input {
+.input-login {
   background-color: #eee;
   border: none;
   padding: 12px 15px;
