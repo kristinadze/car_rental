@@ -366,12 +366,6 @@ a {
   text-decoration: none;
 }
 
-.create-car {
-  border: 1px solid black;
-  width: 70%;
-  margin: auto;
-}
-
 .h1-login {
   font-weight: bold;
   margin: 0;
@@ -432,7 +426,7 @@ button:focus {
   text-align: center;
 }
 
-input {
+.input-login {
   background-color: #eee;
   border: none;
   padding: 12px 15px;
