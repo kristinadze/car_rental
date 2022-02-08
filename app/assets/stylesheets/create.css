@@ -1,1 +1,39 @@
-/* No CSS *//*# sourceMappingURL=create.css.map */
+.create-car {
+  width: 50%;
+  margin: auto;
+}
+
+.p-form {
+  padding: 15px 10px 15px 0;
+  font-weight: 600;
+  border-top: 1px solid #c7c7c7;
+  padding-left: 3%;
+}
+
+.text-form {
+  border: 1px solid #c7c7c7;
+  width: 96%;
+  padding: 3px 10px;
+}
+
+.text-name {
+  font-size: 12px;
+}
+
+.h1-form {
+  width: 50%;
+  margin: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.h1-h1 {
+  color: #121214;
+  font-family: RlBasisGrotesque, Avenir, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+  line-height: 44px;
+  text-transform: none;
+}
+/*# sourceMappingURL=create.css.map */
