@@ -98,28 +98,36 @@ span {
 }
 
 .div-answers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 24px;
+  width: 1064px;
+  margin: auto;
+}
+
+.div-answers:hover {
+  cursor: pointer;
 }
 
 .div-answer {
-  font-size: 15px;
+  font-size: 16px;
+  border-top: 1px solid rgba(223, 219, 219, 0.986);
+  margin: 0;
+  color: #121214;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  font-family: RlBasisGrotesque, Avenir, Helvetica Neue, Helvetica, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-transform: none;
+  padding-top: 4%;
 }
 
-.div-answer-1 {
-  border-top: 1px solid rgba(223, 219, 219, 0.986);
-  margin-right: 5%;
-  padding-top: 2%;
-}
-
-.div-answer-2 {
-  border-top: 1px solid rgba(223, 219, 219, 0.986);
-  padding-top: 10%;
+.fa-angle-down {
+  float: right;
 }
 
 .h6-p-div-2 {
