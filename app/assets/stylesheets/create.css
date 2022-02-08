@@ -3,6 +3,10 @@
   margin: auto;
 }
 
+.create-car:hover {
+  cursor: pointer;
+}
+
 .p-form {
   padding: 15px 10px 15px 0;
   font-weight: 600;
@@ -14,6 +18,10 @@
   border: 1px solid #c7c7c7;
   width: 96%;
   padding: 3px 10px;
+}
+
+.text-form:hover {
+  border: 1px solid #593cfb;
 }
 
 .text-name {
