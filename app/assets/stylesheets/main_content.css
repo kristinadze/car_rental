@@ -51,6 +51,14 @@ span {
   color: #593cfb;
 }
 
+.car-host {
+  color: #593cfb;
+}
+
+.car-host:hover {
+  text-decoration: underline;
+}
+
 .my-button-color {
   display: inline-block;
   text-decoration: none;
