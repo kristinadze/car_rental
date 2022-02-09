@@ -28,9 +28,15 @@
         
     <p class="p-form"><a onclick="javascript:ShowHide('HiddenDiv12')"><i class="fas fa-angle-down"></i>Car photo </a></p>
           <div class="mid" id="HiddenDiv12" style="display: none;color:black; font-size: 15px; font-weight: 400; margin-top: 2%; margin-bottom: 3%;"> 
-              <%= f.label :image, :class => 'text-name' %><br>
-              <%= f.file_field :image %><br>
+          <%= f.label :image, :class => 'text-name' %><br>
+         
+          <label class="custom-file-upload">
+            <%= f.file_field :image %><br>
+            <i class="fa fa-cloud-upload"></i> Choose a file...
+          </label>
+              
           </div>
+
      <p class="p-form"><a onclick="javascript:ShowHide('HiddenDiv13')"><i class="fas fa-angle-down"></i>Car details </a></p>
           <div class="mid" id="HiddenDiv13" style="display: none;color:black; font-size: 15px; font-weight: 400; margin-top: 2%;margin-bottom: 3%;"> 
               <%= f.label :description, :class => 'text-name' %><br>

@@ -392,8 +392,10 @@ a {
 
 .text-form {
   border: 1px solid #c7c7c7;
-  width: 96%;
+  width: 91%;
   padding: 3px 10px;
+  margin-left: 4%;
+  margin-bottom: 2%;
 }
 
 .text-form:hover {
@@ -402,6 +404,8 @@ a {
 
 .text-name {
   font-size: 12px;
+  margin-left: 4%;
+  margin-bottom: 1%;
 }
 
 .h1-form {
@@ -423,9 +427,10 @@ a {
 
 .text-form-description {
   border: 1px solid #c7c7c7;
-  width: 96%;
+  width: 91%;
   height: 34%;
   padding: 3px 10px;
+  margin-left: 4%;
 }
 
 .my-button-color-2 {
@@ -448,6 +453,35 @@ a {
 
 .my-button-color-2:hover {
   background-color: #210aa1;
+}
+
+[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 1px solid #593cfb;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 4%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 3%;
+  color: #593cfb;
+  overflow: hidden;
+}
+
+.custom-file-upload:hover {
+  background-color: #593cfb;
+  color: white;
+}
+
+.fa-cloud-upload {
+  color: #593cfb;
+}
+
+.fa-cloud-upload:hover {
+  color: #593cfb;
 }
 
 .h1-login {
