@@ -1,22 +1,36 @@
 .browse-cars-div {
-  display: flex;
-  justify-content: center;
+  width: 941px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
   margin-top: 25px;
+  justify-items: center;
+  column-gap: 24px;
+  row-gap: 24px;
+}
+
+.div-p-browse {
+  width: 941px;
+  margin: auto;
 }
 
 .browse-car-div {
-  width: 35%;
-  margin: 1%;
-  box-shadow: 0px 0px 8px 1px #ccc;
+  // box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  margin-top: 4%;
+  border-radius: 4px;
 }
 
 .browse-p {
   margin: 0px;
   color: rgb(18, 18, 20);
-  font-family: RlBasisGrotesque,  Avenir,  Helvetica Neue,  Helvetica,
-     sans-serif;
+  // font-family: RlBasisGrotesque,  Avenir,  Helvetica Neue,  Helvetica,
+  //    sans-serif;
+  // font-weight: 300;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
   font-size: 21px;
-  font-weight: 900;
+  // font-weight: 900;
   letter-spacing: -0.2px;
   line-height: 28px;
   text-transform: none;
@@ -25,4 +39,19 @@
   white-space: nowrap;
   margin-left: 3%;
   text-decoration: none;
+  margin-bottom: 3%;
+}
+
+.p-browse {
+  // font-family: RlFreight, HoeflerText-Black, Times New Roman, serif;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: -0.5px;
+  line-height: 56px;
+  text-transform: none;
+}
+
+a {
+  color: black;
 }

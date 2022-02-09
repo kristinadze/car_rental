@@ -1,13 +1,15 @@
 
-
+<div class="div-p-browse">
+    <p class="p-browse">Skip the car rental counter and book any models you want</p>
+</div>
 
 <div class='browse-cars-div'>
     <% @cars.each do |car| %>
         <div class="browse-car-div">
             
-            <%= image_tag car.image, style: "display: block"  %>
+            <%= image_tag car.image, style: "display: block; border-bottom: 1px solid rgba(50, 50, 93, 0.13);"  %>
             <br/>
-            <a class="browse-p"href="<%= car_url(car) %>">Rent <%= car.name + " " %><%= car.year%></a>
+            <p class="browse-p"> <a href="<%= car_url(car) %>">Rent <%= car.name + " " %><%= car.year%></a></p>
         </div>
     <% end %>
 </div>
