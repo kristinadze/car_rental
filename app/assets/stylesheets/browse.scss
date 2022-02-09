@@ -1,3 +1,10 @@
+.img-cont {
+  background-image: url("/assets/blue.jpg");
+  background-repeat: no-repeat;
+  background-size: 45% 126%;
+  background-position-x: center;
+}
+
 .browse-cars-div {
   width: 941px;
   display: grid;
@@ -20,6 +27,7 @@
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   margin-top: 4%;
   border-radius: 4px;
+  background-color: white;
 }
 
 .browse-p {
@@ -28,7 +36,7 @@
   // font-family: RlBasisGrotesque,  Avenir,  Helvetica Neue,  Helvetica,
   //    sans-serif;
   // font-weight: 300;
-  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  // font-family: "IBM Plex Sans Thai Looped", sans-serif;
   font-size: 21px;
   // font-weight: 900;
   letter-spacing: -0.2px;
@@ -39,19 +47,34 @@
   white-space: nowrap;
   margin-left: 3%;
   text-decoration: none;
-  margin-bottom: 3%;
+  padding-bottom: 4%;
+  font-weight: 600;
 }
 
 .p-browse {
   // font-family: RlFreight, HoeflerText-Black, Times New Roman, serif;
   font-family: "IBM Plex Sans Thai Looped", sans-serif;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 28px;
   letter-spacing: -0.5px;
   line-height: 56px;
   text-transform: none;
+  margin-top: 5%;
 }
 
 a {
   color: black;
+}
+
+.browse-image {
+  display: block;
+  border-bottom: 1px solid rgba(50, 50, 93, 0.13);
+  -webkit-transition: 0.5s border, 0.5s background;
+  transition: 0.5s border, 0.5s background;
+}
+
+.browse-image:hover {
+  opacity: 0.3;
+  -webkit-transition: 0.5s border, 0.5s background;
+  transition: 0.5s border, 0.5s background;
 }
