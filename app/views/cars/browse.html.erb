@@ -1,16 +1,27 @@
+<div class="img-cont">
 
-<div class="div-p-browse">
-    <p class="p-browse">Skip the car rental counter and book any models you want</p>
+    <div class="div-p-browse">
+        <p class="p-browse">Skip the car rental counter and book any models you want</p>
+    </div>
+
+    <div class='browse-cars-div'>
+        <% @cars.each do |car| %>
+        <a href="<%= car_url(car) %>">
+            <div class="browse-car-div">
+                
+                <%= image_tag car.image, :class => "browse-image" %>
+                <br/>
+                <p class="browse-p"><%= car.name + " " %><%= car.year%></p>
+            </div>
+            </a>
+        <% end %>
+    </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
 </div>
-
-<div class='browse-cars-div'>
-    <% @cars.each do |car| %>
-        <div class="browse-car-div">
-            
-            <%= image_tag car.image, style: "display: block; border-bottom: 1px solid rgba(50, 50, 93, 0.13);"  %>
-            <br/>
-            <p class="browse-p"> <a href="<%= car_url(car) %>">Rent <%= car.name + " " %><%= car.year%></a></p>
-        </div>
-    <% end %>
-</div>
-
