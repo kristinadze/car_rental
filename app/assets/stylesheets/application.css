@@ -865,6 +865,7 @@ button:focus {
   letter-spacing: 0.5px;
   line-height: 16px;
   text-transform: uppercase;
+  margin-top: 3%;
 }
 
 .p-host-name {
