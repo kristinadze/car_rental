@@ -18,6 +18,19 @@
   text-transform: none;
 }
 
+.p-attr {
+  margin-bottom: 2%;
+  margin: 0;
+  color: #121214;
+  margin-bottom: 0;
+  font-family: RlBasisGrotesque, Avenir, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-transform: none;
+}
+
 .p-attr-2 {
   display: inline;
 }
