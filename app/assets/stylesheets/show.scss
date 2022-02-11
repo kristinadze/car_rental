@@ -16,6 +16,8 @@
   letter-spacing: -0.2px;
   line-height: 44px;
   text-transform: none;
+  margin-bottom: 5%;
+  margin-top: 6%;
 }
 
 .p-attr {
@@ -38,4 +40,30 @@
 .p-attr-3 {
   float: right;
   padding-right: 40%;
+}
+
+.h2-host {
+  margin: 0;
+  color: #121214;
+  margin-bottom: 9px;
+  text-align: left;
+  font-family: RlBasisGrotesque, Avenir, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.p-host-name {
+  margin: 0;
+  color: #121214;
+  margin-bottom: 0;
+  font-family: RlBasisGrotesque, Avenir, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 21px;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+  line-height: 28px;
+  text-transform: none;
+  display: inline;
 }
