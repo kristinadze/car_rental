@@ -1,20 +1,18 @@
 <section class="page"><div class="centered-box">
   
   <%= image_tag @car.image, style: "height: 83vh; width: 98%;" %>
-  <h1><%= @car.name %></h1>
+  
 
-  <table>
-    <tr>
-      <th>Attribute</th>
-      <th>Value</th>
-    </tr>
-    <% [:year, :mpg, :doors, :gas, :seats, :description].each do |attr_name| %>
-      <tr>
-        <td><%= attr_name %></td>
-        <td><%= @car.send(attr_name) %></td>
-      </tr>
-    <% end %>
-  </table>
+  <div class="main-show-container">
+
+      <div class="container-1">
+        <h1 class="h1-show"><%= @car.name + " " %><%= @car.year%></h1>
+        <p class="p-attr p-attr-2"><i class="fa-solid fa-car"></i> <%= @car.gas %> </p>
+        <p class="p-attr p-attr-2 p-attr-3"><%= @car.doors %> <br> </p>
+        <p class="p-attr"><%= @car.seats %> <br> </p>
+        
+      </div>
+  </div>
 
   <% if @car.owner == current_user %>
     <a href="<%= edit_car_url(@car) %>">Edit <%= @car.name %></a>

@@ -810,4 +810,32 @@ button:focus {
   transition: transform 80ms ease-in, -webkit-transform 80ms ease-in;
   margin-top: 4%;
 }
+
+.main-show-container {
+  border: 1px solid black;
+  width: 82%;
+  margin: auto;
+}
+
+.container-1 {
+  width: 50%;
+}
+
+.h1-show {
+  font-family: RlBasisGrotesque,  Avenir,  Helvetica Neue,  Helvetica,  sans-serif;
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+  line-height: 44px;
+  text-transform: none;
+}
+
+.p-attr-2 {
+  display: inline;
+}
+
+.p-attr-3 {
+  float: right;
+  padding-right: 40%;
+}
 /*# sourceMappingURL=application.css.map */
