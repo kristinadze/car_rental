@@ -23,14 +23,18 @@
       <br>
       <br>
 
-      <p class="p-attr p-attr-2"> <%= @car.owner.username.capitalize %> has completed training on enhanced cleaning and disinfection practices. </p>
+      <p class="p-attr p-attr-2"><i class="fal fa-car-wash"></i> <%= @car.owner.username.capitalize %> has completed training on enhanced cleaning and disinfection practices. </p>
+      <br>
+      <br>
+      <h2 class="h2-host"> DESCRIPTION </h2>
+      <p class="p-attr p-attr-2"><%= @car.description %></p>
   </div>
-
-
 
   <% if @car.owner == current_user %>
     <a href="<%= edit_car_url(@car) %>">Edit <%= @car.name %></a>
   <% end %>
+
+  
 
   <br><br>
   <h1>Rental Requests</h1>

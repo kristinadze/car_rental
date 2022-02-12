@@ -880,4 +880,9 @@ button:focus {
   text-transform: none;
   display: inline;
 }
+
+.fa-car-wash {
+  color: #593cfb;
+  margin-right: 1%;
+}
 /*# sourceMappingURL=application.css.map */
