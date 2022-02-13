@@ -6,6 +6,7 @@
   <div class="main-show-container">
 
       <div class="container-1">
+
         <h1 class="h1-show"><%= @car.name.capitalize + " " %><%= @car.year%></h1>
         
         <p class="p-attr p-attr-2"><%= image_tag 'gas-station.png', style: 'width: 5%; display: inline; padding-left: 1%' %> <%= @car.gas.capitalize %> </p>
@@ -14,7 +15,7 @@
         <p class="p-attr p-attr-2 p-attr-3"><%= image_tag 'car-door.png', style: 'width: 7%; display: inline; padding-right: 3%; padding-left: 1%' %><%= @car.doors %> doors </p> <br><br>
         <p class="p-attr"><%= image_tag 'seat.png', style: 'width: 6%; display: inline; padding-right:1%' %><%= @car.seats %> seats </p> <br> 
         
-      </div>
+     
 
       <h2 class="h2-host"> HOSTED BY </h2>
       <%= image_tag 'user.png', style: 'width: 5%; display: inline; padding-left: 1%' %>
@@ -54,6 +55,32 @@
       <br>
       <h2 class="h2-host"> DESCRIPTION </h2>
       <p class="p-attr p-attr-2"><%= @car.description %></p>
+
+   </div>
+
+      <div class="container-2">
+
+        <h1>Rental Requests</h1>
+        <% if @car.rental_requests.empty? %>
+          <p><%= @car.name %> has no rental requests.</p>
+        <% else %>
+          <table>
+            <tr>
+              <th>User</th>
+              <th>Start Date</th>
+              <th>End Date</th>
+              <th>Status</th>
+            </tr>
+            <% @car.rental_requests.order('start_date').each do |req| %>
+              <%= render 'req_tr', req: req %>
+            <% end %>
+          </table>
+        <% end %>
+
+        <% if logged_in? %>
+          <a href="<%= new_car_rental_request_url(car_id: @car.id) %>">Make new request</a>
+        <% end %>
+      </div>
   </div>
 
   <% if @car.owner == current_user %>
@@ -62,25 +89,5 @@
 
   
 
-  <br><br>
-  <h1>Rental Requests</h1>
-  <% if @car.rental_requests.empty? %>
-    <p><%= @car.name %> has no rental requests.</p>
-  <% else %>
-    <table>
-      <tr>
-        <th>User</th>
-        <th>Start Date</th>
-        <th>End Date</th>
-        <th>Status</th>
-      </tr>
-      <% @car.rental_requests.order('start_date').each do |req| %>
-        <%= render 'req_tr', req: req %>
-      <% end %>
-    </table>
-  <% end %>
-
-  <% if logged_in? %>
-    <a href="<%= new_car_rental_request_url(car_id: @car.id) %>">Make new request</a>
-  <% end %>
+  
 </div></section>
