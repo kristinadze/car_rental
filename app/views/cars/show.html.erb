@@ -23,7 +23,33 @@
       <br>
       <br>
 
-      <p class="p-attr p-attr-2"><i class="fal fa-car-wash"></i> <%= @car.owner.username.capitalize %> has completed training on enhanced cleaning and disinfection practices. </p>
+      <p class="p-attr p-attr-2"><i class="fal fa-car-wash"></i> <%= @car.owner.username.capitalize %> has completed training on enhanced cleaning and disinfection practices. </p> <br>
+
+      <!-- Button trigger modal -->
+<button type="button" class="learn-more-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Learn more
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <%# <h5 class="modal-title" id="exampleModalLabel">Cleaning & disinfection training </h5> %>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <%= image_tag 'cleaning.png' %>
+      <p class="p-host-name"> Cleaning & disinfection training  </p> <br>
+        This host has completed training on enhanced cleaning and disinfection practices that use the latest recommendations compiled from the CDC, EPA, WHO, and vehicle detailing experts.
+      </div>
+    </div>
+  </div>
+</div>
+
+
       <br>
       <br>
       <h2 class="h2-host"> DESCRIPTION </h2>

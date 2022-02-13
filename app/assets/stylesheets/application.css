@@ -885,4 +885,19 @@ button:focus {
   color: #593cfb;
   margin-right: 1%;
 }
+
+.learn-more-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  color: #593cfb;
+  font-family: RlBasisGrotesque, Avenir, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-transform: none;
+  margin-left: 3%;
+}
 /*# sourceMappingURL=application.css.map */
