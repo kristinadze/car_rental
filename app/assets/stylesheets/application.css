@@ -892,6 +892,7 @@ button:focus {
   line-height: 28px;
   text-transform: none;
   display: inline;
+  padding-left: 1%;
 }
 
 .fa-car-wash {
