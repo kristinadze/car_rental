@@ -63,8 +63,17 @@
       <p class="p-attr p-attr-2"><%= @car.name %></p> 
       <br>
       <br>
-      <br>
-      <p class="p-attr p-attr-2"><%= @car.description %></p>
+      
+
+        <div id="div-answer-show-page">
+
+
+        <%= @car.description %>
+        
+            
+                  
+        </div>
+        <button id="more"">More</button>
 
    </div>
 
@@ -101,3 +110,19 @@
 
   
 </div></section>
+
+<script type="text/javascript">
+    $('#more').click(function(e) {
+    e.stopPropagation();
+    $('#div-answer-show-page').css({
+        'height': 'auto',
+        'opacity': 1
+    })
+});
+
+$(document).click(function() {
+    $('#div-answer-show-page').css({
+        'height': '50px'
+    })
+})
+</script>
