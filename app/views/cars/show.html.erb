@@ -13,16 +13,16 @@
         <br>
         <br>
         <p class="p-attr p-attr-2 p-attr-3"><%= image_tag 'car-door.png', style: 'width: 7%; display: inline; padding-right: 3%;' %><%= @car.doors %> doors </p> <br><br>
-        <p class="p-attr"><%= image_tag 'seat.png', style: 'width: 6%; display: inline;' %><%= @car.seats %> seats </p> <br> 
+        <p class="p-attr"><%= image_tag 'seat.png', style: 'width: 6%; display: inline; margin-left: -1%;' %><%= @car.seats %> seats </p> <br> 
         
      
 
-      <h2 class="h2-host"> HOSTED BY </h2>
-      <div class="div-host">
-        <%= image_tag 'user.png', style: 'width: 9%; display: inline; padding-left: 1%' %>
-        <p class="p-host-name"><%= @car.owner.username.capitalize %> <br>
-        <span class="all-star-host">All-Star Host </span></p>
-      </div>
+        <h2 class="h2-host"> HOSTED BY </h2>
+        <div class="div-host">
+          <%= image_tag 'user.png', style: 'width: 9%; display: inline; padding-left: 1%' %>
+          <p class="p-host-name"><%= @car.owner.username.capitalize %> <br>
+          <span class="all-star-host">All-Star Host </span></p>
+        </div>
 
       <br>
       <br>
@@ -65,12 +65,9 @@
       <br>
       
 
-        <div id="div-answer-show-page">
-
-
-        <%= @car.description %>
-                
-        </div>
+      <div id="div-answer-show-page">
+        <%= @car.description %>       
+      </div>
         <button id="more"">More</button>
         <button id="less"">Less</button>
 
@@ -111,6 +108,7 @@
 </div></section>
 
 <script type="text/javascript">
+
 
     $('#more').click(function(e) {
       $('#more').css({
