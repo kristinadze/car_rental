@@ -208,4 +208,8 @@
   -ms-grid-column-align: start;
       justify-self: start;
 }
+
+.div-edit {
+  float: right;
+}
 /*# sourceMappingURL=show.css.map */

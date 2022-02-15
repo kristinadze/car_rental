@@ -1028,4 +1028,8 @@ button:focus {
   -ms-grid-column-align: start;
       justify-self: start;
 }
+
+.div-edit {
+  float: right;
+}
 /*# sourceMappingURL=application.css.map */

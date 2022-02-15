@@ -1,6 +1,11 @@
 <section class="page"><div class="centered-box">
   
   <%= image_tag @car.image, style: "height: 83vh; width: 98%;" %>
+  <div class="div-edit">
+    <% if @car.owner == current_user %>
+      <a href="<%= edit_car_url(@car) %>">Edit <%= @car.name %></a>
+    <% end %>
+  </div>
   
 
   <div class="main-show-container">
@@ -119,9 +124,7 @@
       </div>
   </div>
 
-  <% if @car.owner == current_user %>
-    <a href="<%= edit_car_url(@car) %>">Edit <%= @car.name %></a>
-  <% end %>
+  
 
   
 
