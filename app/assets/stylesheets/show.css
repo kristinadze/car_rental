@@ -194,4 +194,18 @@
 .buttons-and-text {
   margin-left: 1%;
 }
+
+.div-features {
+  width: 511px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-top: 25px;
+  -webkit-column-gap: 24px;
+          column-gap: 24px;
+  row-gap: 24px;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
 /*# sourceMappingURL=show.css.map */
