@@ -69,11 +69,10 @@
 
 
         <%= @car.description %>
-        
-            
-                  
+                
         </div>
         <button id="more"">More</button>
+        <button id="less"">Less</button>
 
    </div>
 
@@ -112,17 +111,43 @@
 </div></section>
 
 <script type="text/javascript">
+
     $('#more').click(function(e) {
+      $('#more').css({
+        'display': 'none'
+      })
     e.stopPropagation();
+
+    $('#less').css({
+      'display': 'inline'
+    })
+
     $('#div-answer-show-page').css({
         'height': 'auto',
         'opacity': 1
     })
 });
 
+   $('#less').click(function(e) {
+      $('#more').css({
+        'display': 'inline'
+      })
+    e.stopPropagation();
+
+    $('#less').css({
+      'display': 'none'
+    })
+
+    $('#div-answer-show-page').css({
+        'height': '50px',
+        'opacity': 0.33
+    })
+});
+
 $(document).click(function() {
     $('#div-answer-show-page').css({
-        'height': '50px'
+        'height': '50px',
+        'opacity': 0.33
     })
 })
 </script>
