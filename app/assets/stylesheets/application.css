@@ -911,7 +911,7 @@ button:focus {
   letter-spacing: 0;
   line-height: 22px;
   text-transform: none;
-  margin-left: 6%;
+  display: block;
 }
 
 .div-host {
@@ -954,6 +954,7 @@ button:focus {
   letter-spacing: 0;
   line-height: 22px;
   text-transform: none;
+  margin-left: -1%;
 }
 
 #more {
@@ -969,7 +970,6 @@ button:focus {
   border: 1px solid black;
   padding: 1%;
   margin-top: 2%;
-  margin-left: 1%;
 }
 
 #more:hover {
@@ -990,10 +990,20 @@ button:focus {
   border: 1px solid black;
   padding: 1%;
   margin-top: 2%;
-  margin-left: 1%;
 }
 
 #less:hover {
   background-color: #ccc;
+}
+
+.div-image-with-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2%;
+}
+
+.buttons-and-text {
+  margin-left: 1%;
 }
 /*# sourceMappingURL=application.css.map */

@@ -23,36 +23,40 @@
           <p class="p-host-name"><%= @car.owner.username.capitalize %> <br>
           <span class="all-star-host">All-Star Host </span></p>
         </div>
-
-      <br>
-      <br>
-
     
-      <p class="p-attr p-attr-2"><%= image_tag 'gloves.png', style: 'width: 5%; display: inline;' %><%= @car.owner.username.capitalize %> has completed training on enhanced cleaning and disinfection practices. </p> <br>
+        <div class="div-image-with-content">
+            <%= image_tag 'gloves.png', style: 'width: 5%; display: inline;' %>
 
-            <!-- Button trigger modal -->
-      <button type="button" class="learn-more-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Learn more
-      </button>
+            <div class="buttons-and-text">
+                <p class="p-attr p-attr-2"><%= @car.owner.username.capitalize %> has completed training on enhanced cleaning and disinfection practices. </p>
 
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <%# <h5 class="modal-title" id="exampleModalLabel">Cleaning & disinfection training </h5> %>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+                      <!-- Button trigger modal -->
+                
+                <button type="button" class="learn-more-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Learn more
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <%# <h5 class="modal-title" id="exampleModalLabel">Cleaning & disinfection training </h5> %>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                      <%= image_tag 'cleaning.png' %>
+                      <p class="p-host-name"> Cleaning & disinfection training  </p> <br>
+                        This host has completed training on enhanced cleaning and disinfection practices that use the latest recommendations compiled from the CDC, EPA, WHO, and vehicle detailing experts.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
             </div>
-            <div class="modal-body">
-            <%= image_tag 'cleaning.png' %>
-            <p class="p-host-name"> Cleaning & disinfection training  </p> <br>
-              This host has completed training on enhanced cleaning and disinfection practices that use the latest recommendations compiled from the CDC, EPA, WHO, and vehicle detailing experts.
-            </div>
-          </div>
         </div>
-      </div>
 
 
       <br>
