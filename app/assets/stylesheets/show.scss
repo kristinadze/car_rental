@@ -185,3 +185,13 @@
 .buttons-and-text {
   margin-left: 1%;
 }
+
+.div-features {
+  width: 511px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 25px;
+  column-gap: 24px;
+  row-gap: 24px;
+  justify-self: start;
+}
