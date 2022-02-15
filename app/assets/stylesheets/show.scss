@@ -93,7 +93,7 @@
   letter-spacing: 0;
   line-height: 22px;
   text-transform: none;
-  margin-left: 6%;
+  display: block;
 }
 
 .div-host {
@@ -135,6 +135,7 @@
   letter-spacing: 0;
   line-height: 22px;
   text-transform: none;
+  margin-left: -1%;
 }
 
 #more {
@@ -150,7 +151,6 @@
   border: 1px solid black;
   padding: 1%;
   margin-top: 2%;
-  margin-left: 1%;
 }
 
 #more:hover {
@@ -171,9 +171,17 @@
   border: 1px solid black;
   padding: 1%;
   margin-top: 2%;
-  margin-left: 1%;
 }
 
 #less:hover {
   background-color: #ccc;
+}
+
+.div-image-with-content {
+  display: flex;
+  margin-top: 2%;
+}
+
+.buttons-and-text {
+  margin-left: 1%;
 }
