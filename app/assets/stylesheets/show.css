@@ -156,6 +156,8 @@
   text-transform: none;
   border: 1px solid black;
   padding: 1%;
+  margin-top: 2%;
+  margin-left: 1%;
 }
 
 #more:hover {
@@ -175,6 +177,8 @@
   text-transform: none;
   border: 1px solid black;
   padding: 1%;
+  margin-top: 2%;
+  margin-left: 1%;
 }
 
 #less:hover {
