@@ -9,19 +9,59 @@
       <h5 id="h5-main-container"> Explore the world's largest car sharing marketplace</h5>
   </div>
 
-  <div class="browse-cars-2">
-    <%= image_tag("carr.png", :class => "car-image") %>
-    <div class="h6-p-div">
-      <h6 id="browse-cars-h6"> Find the perfect car <span>to <br>conquer the great outdoors </span></h6>
-      <p class="browse-cars-p">Go prepared in a rugged 4x4 to take on winter roads <br>
-       with ease,
-      or a camper van to take you to the trees.</p>
+ <!-- SWIPER JS -->
 
-      <a href="cars/browse">
-        <button type="button" class="my-button-color">Browse cars </button>
-      </a>
+  <div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+        <%= image_tag("carr.png", :class => "car-image") %>
+        <div class="h6-p-div">
+          <h6 id="browse-cars-h6"> Find the perfect car <span>to <br>conquer the great outdoors </span></h6>
+          <p class="browse-cars-p">Go prepared in a rugged 4x4 to take on winter roads <br>
+          with ease,
+          or a camper van to take you to the trees.</p>
+
+          <a href="cars/browse">
+            <button type="button" class="my-button-color">Browse cars </button>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <%= image_tag("ppl.png", :class => "car-image") %>
+        <div class="h6-p-div">
+          <h6 id="browse-cars-h6"> Find the perfect car <span>to <br>unwind for the weekend </span></h6>
+          <p class="browse-cars-p">From daily drivers to spirited sports cars, ditch the <br>
+          grind with convenient nearby cars.</p>
+
+          <a href="cars/browse">
+            <button type="button" class="my-button-color">Browse cars </button>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <%= image_tag("ppl2.png", :class => "car-image") %>
+        <div class="h6-p-div">
+          <h6 id="browse-cars-h6"> Find the perfect car <span>to <br>upgrade your vacation plans </span></h6>
+          <p class="browse-cars-p"> Skip the rental car counter and find the perfect car<br>
+          to complement your vacation vibe.</p>
+
+          <a href="cars/browse">
+            <button type="button" class="my-button-color">Browse cars </button>
+          </a>
+        </div>
+      </div>
 
     </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
   </div>
 
    <div class="main-container-2">
@@ -175,35 +215,55 @@
   </div>  
 
 
+<script type="text/javascript">
+
+  function ShowHide(divId)
+  {
+  if(document.getElementById(divId).style.display == 'none')
+  {
+  document.getElementById(divId).style.display='block';
+  }
+  else
+  {
+  document.getElementById(divId).style.display = 'none';
+  }
+  }
+
+  function ShowHide2(divId)
+  {
+  if(document.getElementById(divId).style.display == 'none')
+  {
+  document.getElementById(divId).style.display='block';
+  }
+  else
+  {
+  document.getElementById(divId).style.display = 'none';
+  }
+  }
 
 
+  const swiper = new Swiper('.swiper', {
+      // Optional parameters
 
 
-    <script type="text/javascript">
-        function ShowHide(divId)
-        {
-        if(document.getElementById(divId).style.display == 'none')
-        {
-        document.getElementById(divId).style.display='block';
-        }
-        else
-        {
-        document.getElementById(divId).style.display = 'none';
-        }
-        }
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
 
-        function ShowHide2(divId)
-        {
-        if(document.getElementById(divId).style.display == 'none')
-        {
-        document.getElementById(divId).style.display='block';
-        }
-        else
-        {
-        document.getElementById(divId).style.display = 'none';
-        }
-        }
-    </script>
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+
+</script>
 
 
   
