@@ -37,6 +37,7 @@
 
 .h6-p-div {
   float: right;
+  margin-right: 12%;
 }
 
 #browse-cars-h6 {
@@ -171,7 +172,7 @@ a {
 .car-image {
   width: 36%;
   display: inline;
-  padding-left: 25%;
+  padding-left: 15%;
 }
 
 @media only screen and (max-width: 945px) {
