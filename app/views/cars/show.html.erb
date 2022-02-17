@@ -83,19 +83,22 @@
 
 
        <h2 class="h2-host"> FEATURES </h2>
-       <div class="div-features">
-          <p class="p-attr p-attr-2">Must be 21+ to book</p>
-          <p class="p-attr p-attr-2">Automatic transmission</p>
-          <p class="p-attr p-attr-2">AUX input</p>
-          <p class="p-attr p-attr-2">Backup camera</p>
-          <p class="p-attr p-attr-2">Blind spot warning</p>
-          <p class="p-attr p-attr-2">Bluetooth</p>
-          <p class="p-attr p-attr-2">GPS</p>
-          <p class="p-attr p-attr-2">Heated seats</p>
-          <p class="p-attr p-attr-2">Long-term car</p>
-          <p class="p-attr p-attr-2">Pet friendly</p>
-          <p class="p-attr p-attr-2">USB charger</p>
+       <div id="div-features">
+          <p>Must be 21+ to book</p>
+          <p>Automatic transmission</p>
+          <p>AUX input</p>
+          <p>Backup camera</p>
+          <p>Blind spot warning</p>
+          <p>Bluetooth</p>
+          <p>GPS</p>
+          <p>Heated seats</p>
+          <p>Long-term car</p>
+          <p>Pet friendly</p>
+          <p>USB charger</p>
        </div>
+
+        <button id="more-2">More</button>
+        <button id="less-2">Less</button>
 
    </div>
 
@@ -124,6 +127,12 @@
       </div>
   </div>
 
+
+<br>
+<br>
+<br>
+<br>
+<br>
   
 
   
@@ -172,4 +181,49 @@ $(document).click(function() {
         'opacity': 0.33
     })
 })
+
+
+
+
+
+
+$('#more-2').click(function(e) {
+      $('#more-2').css({
+        'display': 'none'
+      })
+    e.stopPropagation();
+
+    $('#less-2').css({
+      'display': 'inline'
+    })
+
+    $('#div-features').css({
+        'height': 'auto',
+        'opacity': 1
+    })
+});
+
+   $('#less-2').click(function(e) {
+      $('#more-2').css({
+        'display': 'inline'
+      })
+    e.stopPropagation();
+
+    $('#less-2').css({
+      'display': 'none'
+    })
+
+    $('#div-features').css({
+        'height': '50px',
+        'opacity': 0.33
+    })
+});
+
+$(document).click(function() {
+    $('#div-features').css({
+        'height': '50px',
+        'opacity': 0.33
+    })
+})
+
 </script>
