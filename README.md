@@ -1,10 +1,10 @@
-# Reddit clone
+# Carro - Rent the perfect car!
 
-[![Thumbnail](https://www.howtogeek.com/wp-content/uploads/2019/12/Reddit-Karma-Header.jpg?width=1198&trim=1,1&bg-color=000&pad=1,1)](http://reddit-reddit.herokuapp.com/subs)
+![app](thumbnail.png)(https://carro-carro.herokuapp.com/cars)
 
-Website: http://reddit-reddit.herokuapp.com/subs
+Website: https://carro-carro.herokuapp.com/cars
 
-# This project is a Rails app clone of Reddit.
+# Carjack is a simple car rental web app made using Ruby on Rails for the back-end and using JS, HTML and SASS for the front-end.
 
 Technologies used:
 
@@ -13,6 +13,7 @@ Technologies used:
 - Preconfigured authentication with the BCrypt gem
 - HTML Layouts developed with Bootstrap 5
 - SCSS utility classes for alignment, spacing and font size standardization
+- JS for implementing complex things on web pages
 
 - System dependencies
 
