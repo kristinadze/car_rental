@@ -70,7 +70,7 @@
   </div>
 
   <div class="browse-cars">
-    <%= image_tag("car4.jpg", style: "width:32%; display:inline; padding-left:11%") %>
+    <%= image_tag("car4.jpg", :class => "browse-cars-image") %>
     <div class="h6-p-div-2">
       <h6 id="browse-cars-h6"><a href="cars/browse"> <span class="car-host"> Book a car > </span></a></h6>
       <p class="browse-cars-p">Down the street or across the <br> country, find the perfect vehicle <br> for your next adventure.</p>
@@ -78,7 +78,7 @@
   </div>
 
   <div class="browse-cars-3">
-    <%= image_tag("key.png", style: "width:17%; display:inline; padding-left:35%") %>
+    <%= image_tag("key.png", :class => "key-img") %>
     <div class="h6-p-div-3">
       <h6 id="browse-cars-h6"><a href="<%= new_car_url %>"> <span class="car-host">Become a host > </span></a></h6>
       <p class="browse-cars-p">Accelerate your entrepreneurship <br> and start building a small car sharing<br> business on Turo.</p>
