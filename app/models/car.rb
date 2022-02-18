@@ -1,5 +1,5 @@
 class Car < ApplicationRecord
-    validates :name, :year, :mpg, :doors, :gas, :seats, presence: true
+    validates :name, :year, :mpg, :doors, :gas, :seats, :description, presence: true
 
     has_many :rental_requests,
         class_name: :CarRentalRequest,

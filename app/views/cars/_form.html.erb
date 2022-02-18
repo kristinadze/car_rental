@@ -1,8 +1,16 @@
+
+
 <% action = (car.persisted? ? car_url(car) : cars_url) %>
 <% method = (car.persisted? ? :patch : :post) %>
 
+
+
 <div class="create-car">
+  
   <%= form_for (@car) do |f|%>
+
+    
+  
 
   <p class="p-form"><a onclick="javascript:ShowHide('HiddenDiv11')"><i class="fas fa-angle-down"></i>Your car </a></p>
       <div class="mid" id="HiddenDiv11" style="display: none;color:black; font-size: 15px; font-weight: 400; margin-top: 2%;margin-bottom: 3%;"> 
@@ -49,6 +57,10 @@
     <button type="submit" class="my-button-color-2">Agree </button>
 
   <% end %>
+
+
+
+
 </div>
 
 <script type="text/javascript">
