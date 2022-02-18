@@ -4,7 +4,7 @@
 
 Website: https://carro-carro.herokuapp.com/cars
 
-# Carjack is a simple car rental web app made using Ruby on Rails for the back-end and using JS, HTML and SASS for the front-end.
+# Carro is a simple car rental web app made using Ruby on Rails for the back-end and using JS, HTML and SASS for the front-end.
 
 Technologies used:
 
@@ -12,7 +12,7 @@ Technologies used:
 - Rails version: 5.2.6
 - Preconfigured authentication with the BCrypt gem
 - HTML Layouts developed with Bootstrap 5
-- SCSS utility classes for alignment, spacing and font size standardization
+- SASS utility classes for alignment, spacing and font size standardization
 - JS for implementing complex things on web pages
 
 - System dependencies
