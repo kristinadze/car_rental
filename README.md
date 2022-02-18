@@ -1,24 +1,28 @@
-# README
+# Carro - rent the perfect car
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![app](thumbnail.png)(https://carro-carro.herokuapp.com/cars)
 
-Things you may want to cover:
+Website: https://carro-carro.herokuapp.com/cars
 
-* Ruby version
+# Carro is a simple car rental web app made Ruby on Rails for the back-end and using HTML, JS and SASS for the front-end.
 
-* System dependencies
+Technologies used:
 
-* Configuration
+- Ruby version: 2.6.3
+- Rails version: 5.2.6
+- Preconfigured authentication with the BCrypt gem
+- HTML Layouts developed with Bootstrap 5
+- SCSS utility classes for alignment, spacing and font size standardization
+- JS for implementing complex things on web pages
 
-* Database creation
+- System dependencies
 
-* Database initialization
+- Configuration
 
-* How to run the test suite
+- Database creation
 
-* Services (job queues, cache servers, search engines, etc.)
+- Database initialization
 
-* Deployment instructions
+- Services (job queues, cache servers, search engines, etc.)
 
-* ...
+- Deployment instructions
