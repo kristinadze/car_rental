@@ -1090,4 +1090,9 @@ button:focus {
   line-height: 22px;
   text-transform: none;
 }
+
+.div-errors {
+  width: 30%;
+  margin: auto;
+}
 /*# sourceMappingURL=application.css.map */
