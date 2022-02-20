@@ -1,11 +1,7 @@
 <section class="page"><div class="centered-box">
   
   <%= image_tag @car.image, style: "height: 88vh; width: 104%;" %>     
-  <div class="div-edit">
-    <% if @car.owner == current_user %>
-      <a href="<%= edit_car_url(@car) %>">Edit <%= @car.name %></a>
-    <% end %>
-  </div>
+
   
 
   <div class="main-show-container">
@@ -104,9 +100,9 @@
 
       <div class="container-2">
 
-        <h1>Rental Requests</h1>
+        <h1 class="h1-rental-requests">Rental Requests</h1>
         <% if @car.rental_requests.empty? %>
-          <p><%= @car.name %> has no rental requests.</p>
+          <p class="p-attr-6"><%= @car.name.capitalize %> has no rental requests.</p>
         <% else %>
           <table>
             <tr>
@@ -122,7 +118,7 @@
         <% end %>
 
         <% if logged_in? %>
-          <a href="<%= new_car_rental_request_url(car_id: @car.id) %>">Make new request</a>
+          <a class="nav-i become-a-host" href="<%= new_car_rental_request_url(car_id: @car.id) %>">Make new request</a>
         <% end %>
       </div>
   </div>

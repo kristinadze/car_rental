@@ -879,6 +879,17 @@ button:focus {
   margin-top: 6%;
 }
 
+.h1-rental-requests {
+  font-family: RlBasisGrotesque,  Avenir,  Helvetica Neue,  Helvetica,  sans-serif;
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+  line-height: 44px;
+  text-transform: none;
+  margin-bottom: 5%;
+  margin-top: 12%;
+}
+
 .p-attr {
   margin-bottom: 2%;
   margin: 0;
