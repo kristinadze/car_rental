@@ -1,6 +1,6 @@
 <section class="page"><div class="centered-box">
   
-  <%= image_tag @car.image, style: "height: 83vh; width: 98%;" %>
+  <%= image_tag @car.image, style: "height: 88vh; width: 104%;" %>     
   <div class="div-edit">
     <% if @car.owner == current_user %>
       <a href="<%= edit_car_url(@car) %>">Edit <%= @car.name %></a>
