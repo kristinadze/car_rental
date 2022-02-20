@@ -453,6 +453,22 @@ a {
   transition: 0.5s border, 0.5s background;
 }
 
+@media only screen and (max-width: 746px) {
+  .browse-cars-div {
+    width: 300px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    margin-top: 25px;
+    justify-items: center;
+    -webkit-column-gap: 24px;
+            column-gap: 24px;
+    row-gap: 24px;
+  }
+}
+
 .create-car {
   width: 50%;
   margin: auto;

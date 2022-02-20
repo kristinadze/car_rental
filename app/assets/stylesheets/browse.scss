@@ -78,3 +78,16 @@ a {
   -webkit-transition: 0.5s border, 0.5s background;
   transition: 0.5s border, 0.5s background;
 }
+
+@media only screen and (max-width: 746px) {
+  .browse-cars-div {
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    margin-top: 25px;
+    justify-items: center;
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+}
