@@ -2,7 +2,7 @@
   
   <%= image_tag @car.image, style: "height: 88vh; width: 104%;" %>     
 
-  
+        <a class="nav-i-edit become-a-host" href="<%= edit_car_url(@car) %>">Edit <%= @car.name %></a>
 
   <div class="main-show-container">
 
@@ -100,6 +100,8 @@
 
       <div class="container-2">
 
+
+
         <h1 class="h1-rental-requests">Rental Requests</h1>
         <% if @car.rental_requests.empty? %>
           <p class="p-attr-6"><%= @car.name.capitalize %> has no rental requests.</p>
@@ -120,6 +122,8 @@
         <% if logged_in? %>
           <a class="nav-i become-a-host" href="<%= new_car_rental_request_url(car_id: @car.id) %>">Make new request</a>
         <% end %>
+
+
       </div>
   </div>
 
