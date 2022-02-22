@@ -280,4 +280,19 @@
   line-height: 22px;
   text-transform: none;
 }
+
+.nav-i-edit {
+  display: block;
+  color: #414143;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-left: 8%;
+  margin-top: 2%;
+}
 /*# sourceMappingURL=show.css.map */
