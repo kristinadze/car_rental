@@ -117,6 +117,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 4%;
 }
 
 .all-star-host {
@@ -294,5 +295,6 @@
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   margin-left: 8%;
   margin-top: 2%;
+  width: 15%;
 }
 /*# sourceMappingURL=show.css.map */
