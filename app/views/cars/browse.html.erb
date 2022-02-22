@@ -11,7 +11,7 @@
                 
                 <%= image_tag car.image, :class => "browse-image" %>
                 <br/>
-                <p class="browse-p"><%= car.name + " " %><%= car.year%></p>
+                <p class="browse-p"><%= car.name.capitalize + " " %><%= car.year%></p>
             </div>
             </a>
         <% end %>
