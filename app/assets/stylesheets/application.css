@@ -1169,6 +1169,10 @@ button:focus {
   text-align: center;
 }
 
+.space-container {
+  margin-top: 3%;
+}
+
 .div-errors {
   width: 30%;
   margin: auto;
