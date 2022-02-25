@@ -1,6 +1,10 @@
-<h1>Create Rental Request</h1>
+<div class="h1-form">
+    <h1 class="h1-h1">Rental Request</h1>
+</div>
 
 <%= render "shared/errors" %>
+
+<div class="create-car">
 
 <form action="<%= car_rental_requests_url %>" method="post">
 <input
@@ -8,9 +12,9 @@
     name="authenticity_token"
     value="<%= form_authenticity_token %>">
 
-  <label for="car_rental_request_car_id">Car</label>
+  <label class="text-name-2" for="car_rental_request_car_id">Car</label>
   <select name="car_rental_request[car_id]"
-          id="car_rental_request_car_id">
+          id="car_rental_request_car_id" >
     <option></option>
     <% Car.all.each do |car| %>
       <% selected = @rental_request.car_id == car.id %>
@@ -22,7 +26,7 @@
   </select>
   <br>
 
-  <label for="car_rental_request_start_date">Start Date</label>
+  <label class="text-name-2" for="car_rental_request_start_date">Start Date</label>
   <input
     type="date"
     name="car_rental_request[start_date]"
@@ -30,7 +34,7 @@
     id="car_rental_request_start_date">
   <br>
 
-  <label for="car_rental_request_end_date">End Date</label>
+  <label class="text-name-2" for="car_rental_request_end_date">End Date</label>
   <input
     type="date"
     name="car_rental_request[end_date]"
@@ -38,5 +42,6 @@
     id="car_rental_request_end_date">
   <br>
 
-  <input type="submit">
+  <button type="submit" class="my-button-color-2">Submit </button>
 </form>
+</div>
