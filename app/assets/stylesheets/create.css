@@ -115,6 +115,23 @@
 }
 
 input[type="date"] {
-  color: red;
+  border: 1px solid #e3e6e7;
+  background: #ecf0f1;
+  padding-left: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  float: right;
+  margin-top: 1%;
+}
+
+select {
+  border: 1px solid #e3e6e7;
+  background: #ecf0f1;
+  float: right;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  padding-left: 8%;
+  margin-top: 2%;
 }
 /*# sourceMappingURL=create.css.map */
