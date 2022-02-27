@@ -302,4 +302,27 @@
 .space-container {
   margin-top: 3%;
 }
+
+table {
+  display: block;
+}
+
+tr {
+  border-width: thin;
+}
+
+th {
+  color: #414143;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+td {
+  color: #414143;
+  font-size: 12px;
+  line-height: 16px;
+  white-space: nowrap;
+}
 /*# sourceMappingURL=show.css.map */
