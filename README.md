@@ -1,6 +1,6 @@
 # Carro - Rent the perfect car!
 
-![app](thumbnail.png)(https://carro-carro.herokuapp.com/cars)
+![alt text](https://github.com/[kristinadze]/[car_rental]/blob/[master]/thumbnail.png?raw=true)
 
 Website: https://carro-carro.herokuapp.com/cars
 
