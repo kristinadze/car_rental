@@ -331,6 +331,15 @@ td {
   padding-left: 1%;
 }
 
+input[value="Approve"],
+input[value="Deny"] {
+  color: #414143;
+  font-size: 12px;
+  line-height: 16px;
+  white-space: nowrap;
+  padding-bottom: 1%;
+}
+
 input[value="Approve"]:hover {
   background-color: #dae0e6;
 }

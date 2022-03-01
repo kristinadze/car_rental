@@ -1,7 +1,7 @@
 <section class="page"><div class="centered-box">
   
   <%= image_tag @car.image, style: "height: 88vh; width: 104%;" %>     
-        <a class="nav-i-edit become-a-host" href="<%= edit_car_url(@car) %>">Edit <%= @car.name %></a>
+       
 
   <div class="main-show-container">
 
@@ -120,6 +120,7 @@
 
         <% if logged_in? %>
           <a class="nav-i become-a-host space-container" href="<%= new_car_rental_request_url(car_id: @car.id) %>">Make new request</a>
+          <a class="nav-i become-a-host space-container" href="<%= edit_car_url(@car) %>">Edit <%= @car.name.capitalize %></a>
         <% end %>
 
 
