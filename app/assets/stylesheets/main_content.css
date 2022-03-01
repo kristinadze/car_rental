@@ -278,6 +278,12 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .container-2 {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+    width: inherit;
+  }
   .host-image {
     width: 15%;
     display: inline;

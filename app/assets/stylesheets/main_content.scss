@@ -286,6 +286,11 @@ a {
     flex-wrap: wrap;
   }
 
+  .container-2 {
+    flex: unset;
+    width: inherit;
+  }
+
   .host-image {
     width: 15%;
     display: inline;
