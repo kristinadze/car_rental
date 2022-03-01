@@ -1,6 +1,6 @@
 <section class="page"><div class="centered-box">
   
-  <%= image_tag @car.image, style: "height: 88vh; width: 104%;" %>     
+  <%= image_tag @car.image, :class => "show-page-image" %>     
        
 
   <div class="main-show-container">
@@ -19,13 +19,13 @@
 
         <h2 class="h2-host"> HOSTED BY </h2>
         <div class="div-host">
-          <%= image_tag 'user.png', style: 'width: 9%; display: inline;' %>
+          <%= image_tag 'user.png', :class => "host-image" %>
           <p class="p-host-name"><%= @car.owner.username.capitalize %> <br>
           <span class="all-star-host">All-Star Host </span></p>
         </div>
     
         <div class="div-image-with-content">
-            <%= image_tag 'gloves.png', style: 'width: 5%; display: inline;' %>
+            <%= image_tag 'gloves.png', :class => "gloves-image" %>
 
             <div class="buttons-and-text">
                 <p class="p-attr p-attr-2"><%= @car.owner.username.capitalize %> has completed training on enhanced cleaning and disinfection practices. </p>
