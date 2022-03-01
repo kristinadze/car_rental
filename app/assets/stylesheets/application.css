@@ -1243,6 +1243,7 @@ input[value="Deny"] {
   font-size: 12px;
   line-height: 16px;
   white-space: nowrap;
+  padding-bottom: 1%;
 }
 
 input[value="Approve"]:hover {
