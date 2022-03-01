@@ -192,6 +192,21 @@ a {
   margin: 0 auto;
 }
 
+.main-show-container {
+  width: 82%;
+  margin: auto;
+  display: flex;
+}
+
+.container-1 {
+  width: 50%;
+  flex: 2;
+}
+
+.container-2 {
+  flex: 1;
+}
+
 @media only screen and (max-width: 746px) {
   .div-answers {
     display: grid;
@@ -250,9 +265,9 @@ a {
     text-transform: none;
     margin-left: 0%;
   }
-}
 
-// .swiper {
-//   width: 600px;
-//   height: 300px;
-// }
+  .main-show-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
