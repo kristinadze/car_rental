@@ -308,11 +308,7 @@ table {
 }
 
 tr {
-  border-width: thin;
-}
-
-th {
-  width: 100%;
+  border: 1px solid;
 }
 
 th {
@@ -321,6 +317,7 @@ th {
   font-weight: 600;
   line-height: 16px;
   white-space: nowrap;
+  width: 100%;
 }
 
 td {
