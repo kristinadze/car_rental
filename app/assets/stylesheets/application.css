@@ -1218,6 +1218,10 @@ tr {
 }
 
 th {
+  width: 100%;
+}
+
+th {
   color: #414143;
   font-size: 12px;
   font-weight: 600;
