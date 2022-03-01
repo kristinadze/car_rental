@@ -204,6 +204,21 @@ a {
           flex: 1;
 }
 
+.show-page-image {
+  height: 88vh;
+  width: 104%;
+}
+
+.host-image {
+  width: 9%;
+  display: inline;
+}
+
+.gloves-image {
+  width: 10%;
+  display: inline;
+}
+
 @media only screen and (max-width: 746px) {
   .div-answers {
     display: -ms-grid;
@@ -262,6 +277,14 @@ a {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .host-image {
+    width: 15%;
+    display: inline;
+  }
+  .gloves-image {
+    width: 16%;
+    display: inline;
   }
 }
 /*# sourceMappingURL=main_content.css.map */
