@@ -1,6 +1,6 @@
 # Carro - Rent the perfect car!
 
-[![Thumbnail](https://carro-carro.herokuapp.com/cars)](https://carro-carro.herokuapp.com/cars)
+[![Thumbnail](app/assets/images/thumbnail.png)](http://reddit-reddit.herokuapp.com/subs)
 
 Website: https://carro-carro.herokuapp.com/cars
 
