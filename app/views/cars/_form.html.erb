@@ -1,13 +1,13 @@
+<% action_url = car.persisted? ? car_url(car) : cars_url %>
+<% http_method = car.persisted? ? :patch : :post %>
 
 
-<% action = (car.persisted? ? car_url(car) : cars_url) %>
-<% method = (car.persisted? ? :patch : :post) %>
 
 
 
 <div class="create-car">
   
-  <%= form_for (@car) do |f|%>
+  <%= form_for (@car), :url => action_url, :method => http_method do |f|%>
 
     
   

@@ -9,7 +9,7 @@
         <a href="<%= car_url(car) %>">
             <div class="browse-car-div">
                 
-                <%= image_tag car.image, :class => "browse-image" %>
+                <%= image_tag(car.image, :class => "browse-image") if car.image.attached? %>
                 <br/>
                 <p class="browse-p"><%= car.name.capitalize + " " %><%= car.year%></p>
             </div>
