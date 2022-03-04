@@ -4,4 +4,85 @@
 </div>
 
 <%= render 'shared/errors' %>
-<%= render 'form', car: @car %>
+
+<div class="create-car">
+  
+  <%= form_for (@car) do |f|%>
+
+  <p class="p-form"><a onclick="javascript:ShowHide('HiddenDiv11')"><i class="fas fa-angle-down"></i>Your car </a></p>
+      <div class="mid" id="HiddenDiv11" style="display: none;color:black; font-size: 15px; font-weight: 400; margin-top: 2%;margin-bottom: 3%;"> 
+          <%= f.label :name, :class => 'text-name' %> <br>
+          <%= f.text_field :name, :class => 'text-form' %> <br>
+
+          <%= f.label :year, :class => 'text-name' %><br>
+          <%= f.text_field :year, :class => 'text-form' %><br>
+
+          <%= f.label :mpg, :class => 'text-name' %><br>
+          <%= f.text_field :mpg, :class => 'text-form' %><br>
+
+          <%= f.label :doors, :class => 'text-name' %><br>
+          <%= f.text_field :doors, :class => 'text-form' %><br>
+
+          <%= f.label :gas, :class => 'text-name' %><br>
+          <%= f.text_field :gas, :class => 'text-form' %><br>
+
+          <%= f.label :seats, :class => 'text-name' %><br>
+          <%= f.text_field :seats, :class => 'text-form' %><br>
+      </div>
+
+        
+    <p class="p-form"><a onclick="javascript:ShowHide('HiddenDiv12')"><i class="fas fa-angle-down"></i>Car photo </a></p>
+          <div class="mid" id="HiddenDiv12" style="display: none;color:black; font-size: 15px; font-weight: 400; margin-top: 2%; margin-bottom: 3%;"> 
+          <%= f.label :image, :class => 'text-name' %><br>
+         
+          <label class="custom-file-upload">
+            <%= f.file_field :image %><br>
+            <i class="fa fa-cloud-upload"></i> Choose a file...
+          </label>
+              
+          </div>
+
+     <p class="p-form"><a onclick="javascript:ShowHide('HiddenDiv13')"><i class="fas fa-angle-down"></i>Car details </a></p>
+          <div class="mid" id="HiddenDiv13" style="display: none;color:black; font-size: 15px; font-weight: 400; margin-top: 2%;margin-bottom: 3%;"> 
+              <%= f.label :description, :class => 'text-name' %><br>
+              <%= f.text_area :description, :class => 'text-form-description' %><br>
+          </div>
+    
+
+    <%#= f.submit %>
+    <%# <input type="submit" class="btn create-color create-button" value="Submit"></button %>
+    <button type="submit" class="my-button-color-2">Agree </button>
+
+  <% end %>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+        function ShowHide(divId)
+        {
+        if(document.getElementById(divId).style.display == 'none')
+        {
+        document.getElementById(divId).style.display='block';
+        }
+        else
+        {
+        document.getElementById(divId).style.display = 'none';
+        }
+        }
+
+        function ShowHide2(divId)
+        {
+        if(document.getElementById(divId).style.display == 'none')
+        {
+        document.getElementById(divId).style.display='block';
+        }
+        else
+        {
+        document.getElementById(divId).style.display = 'none';
+        }
+        }
+    </script>
+
