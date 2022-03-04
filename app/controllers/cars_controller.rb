@@ -38,7 +38,7 @@ class CarsController < ApplicationController
     end
 
     def update 
-        @car = current_user.cars.new(car_params)
+        @car = Car.find(params[:id])
         if @car.update_attributes(car_params)
             redirect_to car_url(@car)
         else
