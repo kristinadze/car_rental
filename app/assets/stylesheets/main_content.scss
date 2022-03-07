@@ -231,7 +231,8 @@ a {
   .div-answers {
     display: grid;
     grid-template-columns: 1fr;
-    margin-left: 6%;
+    margin: auto;
+    width: 75%;
   }
 
   .index-main-image {
@@ -249,7 +250,7 @@ a {
   }
 
   .fa-angle-down {
-    float: initial;
+    // float: initial;
     margin-left: 2%;
   }
 
@@ -279,6 +280,7 @@ a {
     text-transform: none;
     margin: 0 auto;
     float: right;
+    margin-bottom: 3%;
   }
 
   .h2-fuel-your-daydreams {
