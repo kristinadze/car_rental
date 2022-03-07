@@ -375,6 +375,11 @@ a {
   display: inline;
 }
 
+.index-main-image {
+  height: 88vh;
+  width: 104%;
+}
+
 @media only screen and (max-width: 746px) {
   .div-answers {
     display: -ms-grid;
@@ -382,6 +387,10 @@ a {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     margin-left: 6%;
+  }
+  .index-main-image {
+    width: 104%;
+    height: 58vh;
   }
   #h5-main-container {
     margin-left: -15%;
