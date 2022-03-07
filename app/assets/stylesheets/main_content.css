@@ -230,7 +230,8 @@ a {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    margin-left: 6%;
+    margin: auto;
+    width: 75%;
   }
   .index-main-image {
     width: 104%;
@@ -244,7 +245,6 @@ a {
     margin-left: -12%;
   }
   .fa-angle-down {
-    float: initial;
     margin-left: 2%;
   }
   .h6-p-div {
@@ -269,6 +269,7 @@ a {
     text-transform: none;
     margin: 0 auto;
     float: right;
+    margin-bottom: 3%;
   }
   .h2-fuel-your-daydreams {
     font-family: RlFreight,  HoeflerText-Black,  Times New Roman,  serif;
