@@ -389,12 +389,15 @@ a {
     margin: auto;
     width: 75%;
   }
+  .browse-car-p-p {
+    margin-left: -9%;
+  }
   .index-main-image {
     width: 104%;
     height: 58vh;
   }
   #h5-main-container {
-    margin-left: -15%;
+    margin-left: -21%;
   }
   .car-image {
     width: 100%;
